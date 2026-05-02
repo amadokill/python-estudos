@@ -26,7 +26,7 @@ def Resposta(nome):
         elif op == "2":
             print("Cadastrar nova pessoa...")
             nom = input("Digite o nome a ser adcionado: ")
-            idade = int(input("Digite a indade a ser adcionada: "))
+            idade = int(input("Digite a idade a ser adcionada: "))
             Cadastro(nome, nom, idade)
 
         elif op == "3":
@@ -73,4 +73,4 @@ def Cadastro(arq="", nom="", idade=0):
         try:
             a.write(f"Nome: {nom}|Idade: {idade}\n")
         except:
-            print("Houve um erra ao tentar escrever no arquivo")
+            print("Houve um erro ao tentar escrever no arquivo")
